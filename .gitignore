@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Docker environment files
+.dockerdev/.bash_history
