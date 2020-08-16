@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const { Post, Comment } = require('../../models')
+const { Post } = require('../../models')
 
 const router = Router()
 
@@ -7,6 +7,7 @@ const router = Router()
 router.get('/posts', function (req, res, next) {
   Post.findAll({ limit: 15 })
     .then(posts => res.json(posts))
+    .catch(error => res.json({ error }))
 })
 
 /* GET user by ID. */
@@ -19,6 +20,7 @@ router.get('/posts/:id', function (req, res, next) {
         res.sendStatus(404)
       }
     })
+    .catch(error => res.json({ error }))
 })
 
 module.exports = router
