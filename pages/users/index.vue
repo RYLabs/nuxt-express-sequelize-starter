@@ -15,6 +15,7 @@
       <nuxt-link class="button" to="/">
         Homepage
       </nuxt-link>
+      <RecentPosts />
     </div>
   </section>
 </template>

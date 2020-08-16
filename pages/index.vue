@@ -34,6 +34,7 @@
           GitHub
         </a>
       </div>
+      <RecentPosts />
     </div>
   </div>
 </template>
