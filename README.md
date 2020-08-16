@@ -30,8 +30,14 @@ $ yarn generate
 ## Sequelize Commands
 
 ```bash
+# create database
+sequelize db:create
+
 # run migration
 sequelize db:migrate
+
+# run seeders
+sequelize db:seed:all
 
 # generate Sequelize model
 sequelize model:generate --name Post --attributes title:string,body:string
@@ -39,6 +45,10 @@ sequelize model:generate --name Post --attributes title:string,body:string
 # generate migration file
 sequelize migration:generate --name add-index-to-posts
 ```
+
+## ExpressJS
+
+Express code sits in the `/api` directory.  Define new routes in `/api/routes` and add them to the server in `/api/index.js`
 
 ## References
 
