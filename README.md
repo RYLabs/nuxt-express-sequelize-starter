@@ -1,4 +1,14 @@
-# nuxt-express
+# Starter Nuxt / Express / Sequelize App
+
+## Docker Setup
+
+```bash
+# start up development server (yarn dev)
+docker-compose up
+
+# start up shell on running container
+docker-compose exec node /bin/bash
+```
 
 ## Build Setup
 
@@ -17,4 +27,21 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Sequelize Commands
+
+```bash
+# run migration
+sequelize db:migrate
+
+# generate Sequelize model
+sequelize model:generate --name Post --attributes title:string,body:string
+
+# generate migration file
+sequelize migration:generate --name add-index-to-posts
+```
+
+## References
+
+- [Nuxt](https://nuxtjs.org/guides/get-started/installation)
+- [Sequelize](https://sequelize.org/master/)
+- [ExpressJS](https://expressjs.com/en/guide/routing.html)
