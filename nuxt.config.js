@@ -75,5 +75,17 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+
+  publicRuntimeConfig: {
+    http: {
+      browserBaseURL: process.env.BROWSER_BASE_URL
+    }
+  },
+
+  privateRuntimeConfig: {
+    http: {
+      baseURL: process.env.BASE_URL
+    }
   }
 }

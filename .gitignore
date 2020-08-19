@@ -91,3 +91,8 @@ sw.*
 
 # Docker environment files
 .dockerdev/.bash_history
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
