@@ -50,6 +50,15 @@ sequelize migration:generate --name add-index-to-posts
 
 Express code sits in the `/api` directory.  Define new routes in `/api/routes` and add them to the server in `/api/index.js`
 
+## CDK
+
+This started also provides a CDK script to provision the app on AWS.  To use:
+
+- Enter Docker container: `docker-compose exec node /bin/bash`
+- Edit `infra/bin/app.ts` and enter the account id, region and VPC id values
+- Set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` in your environment
+- Deploy the app: `cdk deploy appProd`
+
 ## References
 
 - [Nuxt](https://nuxtjs.org/guides/get-started/installation)
