@@ -6,7 +6,7 @@ import { InstanceType, InstanceSize, InstanceClass } from "@aws-cdk/aws-ec2";
 import { AppStack } from "../lib/app_stack";
 
 const env = {
-  account: "139083950354",
+  account: "ENTER_ACCOUNT_ID",
   region: "us-west-2"
 };
 
@@ -17,7 +17,7 @@ const appInfo: AppInfo = {
   author: "Calvin Yu"
 };
 
-const vpc = { vpcId: "vpc-4f31a136" };
+const vpc = { vpcId: "ENTER_VPC_ID" };
 
 const app = new cdk.App();
 
